@@ -11,8 +11,11 @@ const mapStateToProps = (state) => {
 // write mapDispatchToProps below
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchArticles: (article) => dispatch(fetchArticles(article)),
-    }
+        fetchArticles: (article) => {
+        console.log("foo")
+        dispatch(fetchArticles(article))
+    },
+  }
 }
 
 // add mapDispatchToProps instead of null
